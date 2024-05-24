@@ -22,12 +22,14 @@ export const BarChart = ({ chartData }) => {
                                 display: true,
                                 text: 'Day',
                             },
+                            stacked: true
                         },
                         y: {
                             title: {
                                 display: true,
                                 text: 'CO2e',
                             },
+                            stacked: true
                         },
                     }
                 }}
