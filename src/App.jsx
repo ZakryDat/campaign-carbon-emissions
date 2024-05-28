@@ -21,7 +21,7 @@ totalCarbonEmissionsToDate = Math.round(totalCarbonEmissionsToDate)
 const datasets = trips.map((trip, index) => {
     const tripsData = Data.map(day => day.trips[trip] || 0);
 
-    const hue = (index * 10) % 360; // Change this value to adjust the hue step between bars
+    const hue = (index * 12) % 360; // Change this value to adjust the hue step between bars
     const lightness = 50; // Keep lightness constant or vary it if needed
 
     const backgroundColor = `hsl(${hue}, 100%, ${lightness + 20}%)`; // Slightly lighter shade
