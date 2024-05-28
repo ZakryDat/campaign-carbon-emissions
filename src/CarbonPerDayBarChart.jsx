@@ -1,12 +1,14 @@
 // components/BarChart.js
+import { LogarithmicScale } from "chart.js";
 import { Bar } from "react-chartjs-2";
 export const BarChart = ({ chartData }) => {
     return (
-        <div className="chart-container">
-            <h2 style={{ textAlign: "center" }}>CO2e per day</h2>
+        <div style={{ height: '100%', width: '100%' }}>
             <Bar
                 data={chartData}
                 options={{
+                    // responsive: true,
+                    // maintainAspectRatio: false,
                     plugins: {
                         title: {
                             display: true,
