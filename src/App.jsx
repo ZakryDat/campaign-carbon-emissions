@@ -53,7 +53,6 @@ function App() {
                 <h2>Total to date: {totalCarbonEmissionsToDate} kg CO2e, or {totalCarbonEmissionsToDate / 0.04} cups of tea ☕</h2>
             </div>
             <div>
-                {/* style={{ height: '1200px', width: '100%' }} */}
                 <BarChart chartData={chartData} />
             </div>
             <div>
