@@ -36,4 +36,27 @@ export const Data = [
             " 🚗 Berkhamsted to Downing St": 11.2
         },
     },
+    {
+        date: "28/05/2024",
+        trips: {
+            " 🚗 Downing St to Stoke-on-Trent": 56,
+            " 🚗 Stoke-on-Trent to Hinckley": 22.3,
+            " 🚗 Hinckley to London": 33.7,
+        },
+    },
+    {
+        date: "29/05/2024",
+        trips: {
+            " 🚂 London to Penzance": 3,
+            " 🚗 Penzance to Liskeard": 20.4,
+            " 🚗 Liskeard to Drewsteignton": 15.5,
+            " 🚗 Drewsteignton to Honiton": 13.4
+        },
+    },
+    {
+        date: "30/05/2024",
+        trips: {
+            " 🚗 Worcester to Abergavenny": 0,
+        },
+    },
 ];

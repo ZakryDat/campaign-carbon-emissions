@@ -12,7 +12,12 @@ export const BarChart = ({ chartData }) => {
                     plugins: {
                         title: {
                             display: true,
-                            text: "Estimated carbon emissions per day on the campaign trail"
+                            text: "Estimated carbon emissions per day on the campaign trail",
+                            font: {
+                                size: 20, // Increase the title font size
+                                weight: 'bold', // Make the title bold
+                            },
+
                         },
                         legend: {
                             display: false
@@ -23,13 +28,21 @@ export const BarChart = ({ chartData }) => {
                             title: {
                                 display: true,
                                 text: 'Day',
+                                font: {
+                                    size: 18, // Increase the title font size
+                                    weight: 'bold', // Make the title bold
+                                },
                             },
                             stacked: true
                         },
                         y: {
                             title: {
                                 display: true,
-                                text: 'CO2e',
+                                text: 'kg CO2e',
+                                font: {
+                                    size: 18, // Increase the title font size
+                                    weight: 'bold', // Make the title bold
+                                },
                             },
                             stacked: true
                         },
