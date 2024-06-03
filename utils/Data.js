@@ -47,16 +47,38 @@ export const Data = [
     {
         date: "29/05/2024",
         trips: {
-            " 🚂 London to Penzance": 3,
+            " 🚂 London to Penzance": 17.2,
             " 🚗 Penzance to Liskeard": 20.4,
             " 🚗 Liskeard to Drewsteignton": 15.5,
-            " 🚗 Drewsteignton to Honiton": 13.4
+            " 🚗 Drewsteignton to Honiton": 13.4,
+            " 🚂 Honiton to London": 9.6
         },
     },
     {
         date: "30/05/2024",
         trips: {
-            " 🚗 Worcester to Abergavenny": 0,
+            " 🚂 London to Milton Keynes": 2.4,
+        },
+    },
+    {
+        date: "31/05/2024",
+        trips: {
+            " 🚂 Milton Keynes to Macclesfield": 4.3,
+            " 🚂 Macclesfield to London": 7.3,
+        },
+    },
+    {
+        date: "01/06/2024",
+        trips: {
+            " 🚁 London to Redcar": 873,
+            " 🚌 Redcar to Blyth": 166.7,
+            " 🚁 Blyth to Kirby Sigston": 389.3
+        },
+    },
+    {
+        date: "02/06/2024",
+        trips: {
+            " ✈️ Kirby Sigston to London": 1090.2
         },
     },
 ];

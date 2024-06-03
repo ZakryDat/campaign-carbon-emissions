@@ -52,4 +52,22 @@ export const KeirData = [
             " ✈️ Abergavenny to Glasgow": 1625,
         },
     },
+    {
+        date: "31/05/2024",
+        trips: {
+            " ✈️ Glasgow to London": 1795.9,
+        },
+    },
+    {
+        date: "01/05/2024",
+        trips: {
+            " 🚗 Kentish Town to Uxbridge": 6.4,
+        },
+    },
+    {
+        date: "02/05/2024",
+        trips: {
+            " ": 0,
+        },
+    },
 ];
