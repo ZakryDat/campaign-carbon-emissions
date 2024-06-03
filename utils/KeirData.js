@@ -67,7 +67,13 @@ export const KeirData = [
     {
         date: "02/05/2024",
         trips: {
-            " ": 0,
+            " No trips today": 0,
+        },
+    },
+    {
+        date: "03/05/2024",
+        trips: {
+            " 🚂 London to Bury": 7.3,
         },
     },
 ];

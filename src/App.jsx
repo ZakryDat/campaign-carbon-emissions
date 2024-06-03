@@ -29,7 +29,7 @@ keirtotalCarbonEmissionsToDate = Math.round(keirtotalCarbonEmissionsToDate)
 
 // Prepare datasets for each trip
 const datasets = trips.map((trip, index) => {
-    const tripsData = Data.map(day => day.trips[trip] || 0);
+    const tripsData = Data.map(day => day.trips[trip] || null);
 
     const hue = 220; // Hue for blue
     const lightness = 50 + (index * 5) % 20; // Vary lightness for different shades
@@ -51,7 +51,7 @@ const datasets = trips.map((trip, index) => {
 
 // Prepare datasets for each trip
 const datasetsKeir = keirtrips.map((trip, index) => {
-    const tripsData = KeirData.map(day => day.trips[trip] || 0);
+    const tripsData = KeirData.map(day => day.trips[trip] || null);
 
     const hue = 0; // Hue for red
     const lightness = 50 + (index * 5) % 20; // Vary lightness for different shades

@@ -1,5 +1,4 @@
 // components/BarChart.js
-import { LogarithmicScale } from "chart.js";
 import { Bar } from "react-chartjs-2";
 export const BarChart = ({ chartData }) => {
     return (
@@ -21,7 +20,7 @@ export const BarChart = ({ chartData }) => {
                         },
                         legend: {
                             display: false
-                        }
+                        },
                     },
                     scales: {
                         x: {
@@ -46,7 +45,7 @@ export const BarChart = ({ chartData }) => {
                             },
                             stacked: true
                         },
-                    }
+                    },
                 }}
             />
         </div>

@@ -81,4 +81,11 @@ export const Data = [
             " ✈️ Kirby Sigston to London": 1090.2
         },
     },
+    {
+        date: "03/06/2024",
+        trips: {
+            " 🚗 Downing St to Henley-on-Thames": 12.7,
+            " 🚗 Henley-on-Thames to Wantage": 9.5
+        },
+    },
 ];
