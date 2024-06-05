@@ -1,4 +1,4 @@
-export const Data = [
+export const SunakData = [
     {
         date: "23/05/2024",
         trips: {
@@ -85,7 +85,14 @@ export const Data = [
         date: "03/06/2024",
         trips: {
             " 🚗 Downing St to Henley-on-Thames": 12.7,
-            " 🚗 Henley-on-Thames to Wantage": 9.5
+            " 🚗 Henley-on-Thames to Wantage": 9.5,
+            " 🚗 Wantage to Downing St": 23.7
+        },
+    },
+    {
+        date: "04/06/2024",
+        trips: {
+            " 🚂 Downing St to Manchester": 7.2
         },
     },
 ];

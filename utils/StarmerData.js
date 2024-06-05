@@ -1,4 +1,4 @@
-export const KeirData = [
+export const StarmerData = [
     {
         date: "23/05/2024",
         trips: {
@@ -59,21 +59,29 @@ export const KeirData = [
         },
     },
     {
-        date: "01/05/2024",
+        date: "01/06/2024",
         trips: {
             " 🚗 Kentish Town to Uxbridge": 6.4,
         },
     },
     {
-        date: "02/05/2024",
+        date: "02/06/2024",
         trips: {
             " No trips today": 0,
         },
     },
     {
-        date: "03/05/2024",
+        date: "03/06/2024",
         trips: {
             " 🚂 London to Bury": 7.3,
+            " 🚃 Bury to Manchester": 0,
+        },
+    },
+    {
+        date: "04/06/2024",
+        trips: {
+            " 🚂 Manchester to Bolton": 1.1,
+            " 🚂 Bolton to Manchester": 1.1,
         },
     },
 ];
