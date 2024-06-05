@@ -51,7 +51,7 @@ function App() {
             </div>
             <div className='flex flex-col p-4 gap-2 text-left'>
                 <p className='font-semibold'>How are emissions calculated?</p>
-                <p>By following Sunak & Starmer in the news, I have done the best I can to track their travel between locations.</p>
+                <p>I have done the best I can to track Rishi Sunak and Keir Starmer's movements between campaign locations.</p>
                 <p>C02e is equal to the duration of each trip, multiplied by the typical fuel consumption for the vehicle in question
                     and multiplied again by a literature-determined factor for converting fuel burn to carbon emissions (3.16 for aircraft).</p>
                 <p>For air travel, I have tried to identify flights in question on flightradar24. For travel overland, I have assumed (where
