@@ -27,14 +27,9 @@ function App() {
 
     return (
         <>
-            <div className='flex justify-between px-6 font-semibold mb-4 pb-6'>
-                <div className='flex items-baseline gap-8'>
-                    <h1>UKGE 2024</h1>
-                    <h2 className='text-3xl'>Campaign Carbon Emissions Tracker</h2>
-                </div>
-                <div>
-                    <a href=''></a>
-                </div>
+            <div className='flex justify-between px-6 font-semibold mb-4 pb-6 items-center'>
+                <h1>UKGE 2024</h1>
+                <h2 className='text-3xl'>Campaign Carbon Emissions Tracker</h2>
             </div>
             <div className='flex font-semibold items-center justify-center mb-6 gap-8'>
                 <div className='flex flex-col text-4xl bg-gray-400 dark:bg-gray-700 p-4 rounded-lg gap-2'>
