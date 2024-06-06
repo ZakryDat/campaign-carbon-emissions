@@ -84,4 +84,12 @@ export const StarmerData = [
             " 🚂 Bolton to Manchester": 1.1,
         },
     },
+    {
+        date: "05/06/2024",
+        trips: {
+            " ✈️ Manchester to Portsmouth": 1422,
+            " 🚂 Portsmouth to London": 5.3,
+            " ✈️ Portsmouth to Normandy": 1100.7
+        },
+    }
 ];

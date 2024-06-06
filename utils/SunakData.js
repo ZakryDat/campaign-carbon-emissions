@@ -51,13 +51,14 @@ export const SunakData = [
             " 🚗 Penzance to Liskeard": 20.4,
             " 🚗 Liskeard to Drewsteignton": 15.5,
             " 🚗 Drewsteignton to Honiton": 13.4,
-            " 🚂 Honiton to London": 9.6
+            " 🚁 Honiton to London": 1061.8
         },
     },
     {
         date: "30/05/2024",
         trips: {
             " 🚂 London to Milton Keynes": 2.4,
+            " 🚁 Milton Keynes to London": 353.9
         },
     },
     {
@@ -95,4 +96,12 @@ export const SunakData = [
             " 🚂 Downing St to Manchester": 7.2
         },
     },
+    {
+        date: "05/06/2024",
+        trips: {
+            " ✈️ Manchester to Portsmouth": 1422,
+            " 🚂 Portsmouth to London": 5.3,
+            " ✈️ Portsmouth to Normandy": 1100.7
+        },
+    }
 ];

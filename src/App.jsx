@@ -50,7 +50,11 @@ function App() {
                 <CarbonPerDayBarChart />
             </div>
             <div className='flex flex-col p-4 gap-2 text-left'>
-                <p className='font-semibold'>How are emissions calculated?</p>
+                <div className='font-semibold font-style: italic'>
+                    <p>"[...on Sunak's frequent flying] That's not going to make a massive difference when it comes to carbon emissions, let's be serious"</p>
+                    <p> - Claire Coutinho, Energy Secretary</p>
+                </div>
+                <p className='font-semibold mt-2'>How are emissions calculated?</p>
                 <p>I have done the best I can to track Rishi Sunak and Keir Starmer's movements between campaign locations.</p>
                 <p>C02e is equal to the duration of each trip, multiplied by the typical fuel consumption for the vehicle in question
                     and multiplied again by a literature-determined factor for converting fuel burn to carbon emissions (3.16 for aircraft).</p>
