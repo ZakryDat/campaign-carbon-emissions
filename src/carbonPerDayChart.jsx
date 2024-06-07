@@ -11,18 +11,18 @@ const prepareChartData = (starmerData, sunakData) => {
         data.forEach(entry => {
             Object.entries(entry.trips).forEach(([tripName, tripValue]) => {
                 if (tripValue !== 0) { // Only include non-zero values
-                    const dataset = datasets.find(d => d.label === `${candidate} - ${tripName}`);
+                    const dataset = datasets.find(d => d.label === ` ${candidate}: ${tripName}`);
                     if (dataset) {
                         const index = labels.indexOf(entry.date);
                         dataset.data[index] = tripValue;
                     } else {
                         const newDataset = {
-                            label: `${candidate} - ${tripName}`,
+                            label: ` ${candidate}: ${tripName}`,
                             data: Array(labels.length).fill(null),
                             backgroundColor: color,
                             borderColor: color.replace('0.2', '1'),
                             borderWidth: 1,
-                            stack: candidate
+                            stack: candidate,
                         };
                         newDataset.data[labels.indexOf(entry.date)] = tripValue;
                         datasets.push(newDataset);
@@ -49,16 +49,32 @@ const CarbonPerDayBarChart = () => {
             legend: {
                 display: false // Disable the legend
             },
+            title: {
+                display: true,
+                text: "Estimated carbon emissions per day on the campaign trail",
+                font: {
+                    size: 20, // Increase the title font size
+                    weight: 'bold', // Make the title bold
+                },
+            },
             tooltip: {
                 mode: 'nearest'
             }
         },
         scales: {
             x: {
-                stacked: true
+                stacked: true,
             },
             y: {
-                stacked: true
+                stacked: true,
+                title: {
+                    display: true,
+                    text: 'kg CO2e',
+                    font: {
+                        size: 18, // Increase the title font size
+                        weight: 'bold', // Make the title bold
+                    },
+                },
             }
         }
     };

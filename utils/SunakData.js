@@ -101,7 +101,12 @@ export const SunakData = [
         trips: {
             " ✈️ Manchester to Portsmouth": 1422,
             " 🚂 Portsmouth to London": 5.3,
-            " ✈️ London to Normandy": 1100.7,
+            " ✈️ London to Normandy": 1100.7
+        },
+    },
+    {
+        date: "06/06/2024",
+        trips: {
             " ✈️ Normandy to London": 1100.7
         },
     }
