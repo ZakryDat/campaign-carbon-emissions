@@ -3,42 +3,37 @@ import { SunakData } from '../utils/SunakData';
 import { StarmerData } from '../utils/StarmerData';
 
 const prepareChartData = (starmerData, sunakData) => {
-    const labels = starmerData.map(entry => entry.date);
-
-    // Get all trip types
-    const starmerTripTypes = [...new Set(starmerData.flatMap(entry => Object.keys(entry.trips)))];
-    const sunakTripTypes = [...new Set(sunakData.flatMap(entry => Object.keys(entry.trips)))];
-    const allTripTypes = [...new Set([...starmerTripTypes, ...sunakTripTypes])];
+    const labels = [...new Set([...starmerData.map(entry => entry.date), ...sunakData.map(entry => entry.date)])];
 
     const datasets = [];
 
-    allTripTypes.forEach(tripType => {
-        // Starmers data for this trip type
-        datasets.push({
-            label: `${tripType}`,
-            data: labels.map(date => {
-                const entry = starmerData.find(e => e.date === date);
-                return entry && entry.trips[tripType] ? entry.trips[tripType] : 0;
-            }),
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1,
-            stack: 'Starmer'
+    const addData = (data, candidate, color) => {
+        data.forEach(entry => {
+            Object.entries(entry.trips).forEach(([tripName, tripValue]) => {
+                if (tripValue !== 0) { // Only include non-zero values
+                    const dataset = datasets.find(d => d.label === `${candidate} - ${tripName}`);
+                    if (dataset) {
+                        const index = labels.indexOf(entry.date);
+                        dataset.data[index] = tripValue;
+                    } else {
+                        const newDataset = {
+                            label: `${candidate} - ${tripName}`,
+                            data: Array(labels.length).fill(null),
+                            backgroundColor: color,
+                            borderColor: color.replace('0.2', '1'),
+                            borderWidth: 1,
+                            stack: candidate
+                        };
+                        newDataset.data[labels.indexOf(entry.date)] = tripValue;
+                        datasets.push(newDataset);
+                    }
+                }
+            });
         });
+    };
 
-        // Sunaks data for this trip type
-        datasets.push({
-            label: `${tripType}`,
-            data: labels.map(date => {
-                const entry = sunakData.find(e => e.date === date);
-                return entry && entry.trips[tripType] ? entry.trips[tripType] : 0;
-            }),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1,
-            stack: 'Sunak'
-        });
-    });
+    addData(starmerData, 'Starmer', 'rgba(255, 99, 132, 0.2)');
+    addData(sunakData, 'Sunak', 'rgba(54, 162, 235, 0.2)');
 
     return {
         labels,
@@ -52,41 +47,20 @@ const CarbonPerDayBarChart = () => {
     const options = {
         plugins: {
             legend: {
-                display: false
+                display: false // Disable the legend
             },
-            title: {
-                display: true,
-                text: "Estimated carbon emissions per day on the campaign trail",
-                font: {
-                    size: 20, // Increase the title font size
-                    weight: 'bold', // Make the title bold
-                },
+            tooltip: {
+                mode: 'nearest'
             }
         },
         scales: {
             x: {
-                title: {
-                    display: true,
-                    text: 'Day',
-                    font: {
-                        size: 18, // Increase the title font size
-                        weight: 'bold', // Make the title bold
-                    },
-                },
                 stacked: true
             },
             y: {
-                title: {
-                    display: true,
-                    text: 'kg CO2e',
-                    font: {
-                        size: 18, // Increase the title font size
-                        weight: 'bold', // Make the title bold
-                    },
-                },
                 stacked: true
             }
-        },
+        }
     };
 
     return <Bar data={chartData} options={options} />;
