@@ -87,16 +87,6 @@ const CarbonPerDayBarChart = () => {
                 stacked: true
             }
         },
-        tooltips: {
-            mode: 'index',
-            filter: function (item, data) {
-                if (data && data.datasets && data.datasets[item.datasetIndex]) {
-                    var value = data.datasets[item.datasetIndex].data[item.index];
-                    return value !== null && !isNaN(value);
-                }
-                return false; // If any part is undefined, do not show the tooltip
-            }
-        }
     };
 
     return <Bar data={chartData} options={options} />;
