@@ -47,14 +47,14 @@ const CarbonPerDayBarChart = () => {
     const options = {
         plugins: {
             legend: {
-                display: false // Disable the legend
+                display: false
             },
             title: {
                 display: true,
                 text: "Estimated carbon emissions per day on the campaign trail",
                 font: {
-                    size: 20, // Increase the title font size
-                    weight: 'bold', // Make the title bold
+                    size: 20,
+                    weight: 'bold',
                 },
             },
             tooltip: {
@@ -71,8 +71,8 @@ const CarbonPerDayBarChart = () => {
                     display: true,
                     text: 'kg CO2e',
                     font: {
-                        size: 18, // Increase the title font size
-                        weight: 'bold', // Make the title bold
+                        size: 18,
+                        weight: 'bold',
                     },
                 },
             }
