@@ -109,5 +109,30 @@ export const SunakData = [
         trips: {
             " ✈️ Normandy to London": 1100.7
         },
-    }
+    },
+    {
+        date: "07/06/2024",
+        trips: {
+            " 🚂 London to Swindon": 4,
+            " 🚗 Swindon to Stonehouse": 14,
+            " 🚗 Stonehouse to Wiltshire": 12.7,
+            " 🚂 Wiltshire to London": 10,
+            " 🚁 London to Kirby Sigston": 1085.4,
+
+        },
+    },
+    {
+        date: "08/06/2024",
+        trips: {
+            " 🚗 Kirby Sigston to Bishop Auckland": 13,
+            " 🚗 Bishop Auckland to Great Ayton": 11,
+            " 🚗 Great Ayton to Kirby Sigston": 5.3
+        },
+    },
+    {
+        date: "09/06/2024",
+        trips: {
+            " 🚗 Kirby Sigston to Bedale": 4.2,
+        },
+    },
 ];

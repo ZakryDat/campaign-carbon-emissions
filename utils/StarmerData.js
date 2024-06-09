@@ -97,5 +97,25 @@ export const StarmerData = [
         trips: {
             " ✈️ Normandy to London": 1100.7
         },
+    },
+    {
+        date: "07/06/2024",
+        trips: {
+            " No trips today": 0
+        },
+    },
+    {
+        date: "08/06/2024",
+        trips: {
+            " 🚗 Kentish Town to Harlesdon": 2.1,
+            " 🚗 Harlesdon to Camden": 2,
+        },
+    },
+    {
+        date: "09/06/2024",
+        trips: {
+            " 🚗 London to Thurrock": 9.5,
+            " 🚗 Thurrock to London": 9.5,
+        },
     }
 ];
