@@ -117,5 +117,11 @@ export const StarmerData = [
             " 🚗 London to Thurrock": 9.5,
             " 🚗 Thurrock to London": 9.5,
         },
+    },
+    {
+        date: "10/06/2024",
+        trips: {
+            " 🚂 London to Nuneaton": 3.9
+        },
     }
 ];

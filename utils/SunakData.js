@@ -133,6 +133,16 @@ export const SunakData = [
         date: "09/06/2024",
         trips: {
             " 🚗 Kirby Sigston to Bedale": 4.2,
+            " 🚗 Bedale to Kirby Sigston": 4.2,
+        },
+    },
+    {
+        date: "10/06/2024",
+        trips: {
+            " 🚁 Kirby Sigston to London": 1085.4,
+            " 🚌 London to Crawley": 123.4,
+            " 🚌 Crawley to Horsham": 19.8,
+            " 🚗 Horsham to London": 15.7
         },
     },
 ];
