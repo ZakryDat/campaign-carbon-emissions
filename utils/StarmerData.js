@@ -136,5 +136,11 @@ export const StarmerData = [
         trips: {
             " 🚗 Eston to Grimsby": 39
         },
-    }
+    },
+    {
+        date: "13/06/2024",
+        trips: {
+            " 🚗 Grimsby to Manchester": 8.4
+        },
+    },
 ];

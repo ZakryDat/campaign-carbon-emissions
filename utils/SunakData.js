@@ -156,7 +156,13 @@ export const SunakData = [
         date: "12/06/2024",
         trips: {
             " 🚁 London to Doncaster": 873,
-            " 🚌 Doncaster to Grimsby": 132
+            " 🚌 Doncaster to Grimsby": 132,
+        },
+    },
+    {
+        date: "13/06/2024",
+        trips: {
+            " ✈️ Grimsby to Taranto, Italy": 5358.8
         },
     },
 ];
