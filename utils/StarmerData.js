@@ -121,7 +121,20 @@ export const StarmerData = [
     {
         date: "10/06/2024",
         trips: {
-            " 🚂 London to Nuneaton": 3.9
+            " 🚂 London to Nuneaton": 3.9,
+            " 🚂 Nuneaton to London": 3.9
+        },
+    },
+    {
+        date: "11/06/2024",
+        trips: {
+            " 🚂 London to Eston": 9.9
+        },
+    },
+    {
+        date: "12/06/2024",
+        trips: {
+            " 🚗 Eston to Grimsby": 39
         },
     }
 ];

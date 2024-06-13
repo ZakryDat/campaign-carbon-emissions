@@ -145,4 +145,18 @@ export const SunakData = [
             " 🚗 Horsham to London": 15.7
         },
     },
+    {
+        date: "11/06/2024",
+        trips: {
+            " 🚗 London to Silverstone": 28.8,
+            " 🚗 Silverstone to London": 28.8,
+        },
+    },
+    {
+        date: "12/06/2024",
+        trips: {
+            " 🚁 London to Doncaster": 873,
+            " 🚌 Doncaster to Grimsby": 132
+        },
+    },
 ];
